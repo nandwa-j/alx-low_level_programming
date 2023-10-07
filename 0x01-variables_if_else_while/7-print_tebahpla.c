@@ -6,12 +6,13 @@
  */
 
 int main(void)
-char reverse(26) = "zyxwvutsrqponmlkjihgfedcba"
+{
+char rev[26] = "zyxwvutsrqponmlkjihgfedcba";
 int a;
 
 for (a = 0; a < 26; a++)
 {
-putchar(a)
+putchar(rev[a]);
 }
 putchar('\n');
 return (0);
