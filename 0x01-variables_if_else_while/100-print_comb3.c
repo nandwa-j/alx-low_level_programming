@@ -11,7 +11,7 @@ int num1;
 
 for (num = '0'; num < '9'; num++)
 {
-for  (num1 = '0'; num1 < '9'; num1++)
+for  (num1 = '0'; num1 <= '9'; num1++)
 {
 if (num == '0' && num1 < '1')
 continue;
