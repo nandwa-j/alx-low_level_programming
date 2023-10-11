@@ -33,5 +33,5 @@ _putchar(d + '0');
 }
 }
 }
-_putchar('\n')
+_putchar('\n');
 }
