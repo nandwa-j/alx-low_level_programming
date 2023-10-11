@@ -4,7 +4,7 @@
  *
  * Return: Always 0 (success)
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 char i;
 int y;
