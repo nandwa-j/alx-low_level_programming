@@ -1,11 +1,8 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * _abs - Computes the absolute value of an integer
  * @i: int type number
- * 
- * Returns: The absolute value of @i
- * main - Entry
+ * Return: the absolute value of @i
  */
 int _abs(int i)
 {
@@ -18,7 +15,4 @@ else
 {
 return (i);
 }
-
-int main(void)
-{
 }
