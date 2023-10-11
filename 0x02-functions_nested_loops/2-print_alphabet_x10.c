@@ -15,9 +15,9 @@ while (y < 10)
 for (i = 'a'; i <= 'z'; i++)
 {
 _putchar(i);
-_putchar('\n');
 y++;
 }
+_putchar('\n')
 }
 }
 
