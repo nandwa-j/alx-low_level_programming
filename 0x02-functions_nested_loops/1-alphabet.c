@@ -6,7 +6,7 @@
  */
 void print_alphabet(void)
 {
-char c; 
+char c;
 c = 'a';
 
 for (c = 97; c <= 122; c++)
