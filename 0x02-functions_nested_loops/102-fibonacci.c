@@ -8,18 +8,18 @@ int main(void)
 {
 int count = 2;
 long int a = 1, b = 2;
-long int c
+long int c;
 
-printf("%1u, ", a);
+printf("%1lu, ", a);
 while (count <= 50)
 {
 if (count == 50)
 {
-printf("1u\n", b);
+printf("%1lu\n", b);
 }
 else
 {
-printf("%1u, ", b);
+printf("%1lu, ", b);
 }
 c = b;
 b += a;

@@ -16,7 +16,7 @@ total += b;
 }
 c = b;
 b += a;
-a = c
+a = c;
 }
 printf("%d\n", total);
 return (0);

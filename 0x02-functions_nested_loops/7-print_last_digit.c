@@ -11,13 +11,13 @@ int rs;
 
 if (r < 0)
 {
-rs = -1 * (n % 10);
+rs = -1 * (r % 10);
 _putchar(rs + '0');
 return (rs);
 }
 else
 {
-rs = n % 10;
+rs = r % 10;
 _putchar(rs + '0');
 return (rs);
 }

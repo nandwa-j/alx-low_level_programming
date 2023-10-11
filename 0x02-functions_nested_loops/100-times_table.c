@@ -34,7 +34,7 @@ _putchar(' ');
 _putchar(c + '0');
 }
 else
-_putchar(z + '0');
+_putchar(c + '0');
 if (b != n)
 {
 _putchar(',');
