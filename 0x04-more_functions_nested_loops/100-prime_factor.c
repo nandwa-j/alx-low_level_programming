@@ -19,7 +19,7 @@ else
 {
 b++;
 }
-printf("1lu\n", b);
+printf("%lu\n", b);
 break;
 }
 return (0);

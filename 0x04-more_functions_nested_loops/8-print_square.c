@@ -5,7 +5,7 @@
  * @#: character used to print the square
  *
  */
-void print_square(int size);
+void print_square(int size)
 {
 int a, b;
 if (size <= 0)
