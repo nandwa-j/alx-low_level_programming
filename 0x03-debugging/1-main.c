@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* main - prints 
+* main - print an avoided loop 
 * Return: 0
 */
 
