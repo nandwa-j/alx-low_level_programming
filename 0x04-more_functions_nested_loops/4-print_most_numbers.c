@@ -11,9 +11,9 @@ while (a < 58)
 {
 if (a != 50 && a != 52)
 {
+_putchar(a);
 break;
 }
-_putchar(a);
 a++;
 }
 _putchar('\n');
