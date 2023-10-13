@@ -8,19 +8,19 @@ int main(void)
 {
 unsigned long a = 612852475143;
 unsigned long b = 2;
-while (b < a)
+unsigned long c = 0;
+while (a > 1)
 {
 if (a % b == 0)
 {
 a /= b;
-b = 2;
+c = b
 }
 else
 {
 b++;
 }
-printf("%lu\n", b);
-break;
 }
+printf("%lu\n", c);
 return (0);
 }
