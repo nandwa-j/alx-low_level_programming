@@ -16,7 +16,9 @@ if (j > 9)
 _putchar('0' + (j / 10));
 }
 else
+{
 _putchar ('0' + (j % 10));
+}
 }
 i++;
 }

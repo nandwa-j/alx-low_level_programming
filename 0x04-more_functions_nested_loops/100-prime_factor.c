@@ -14,7 +14,7 @@ while (a > 1)
 if (a % b == 0)
 {
 a /= b;
-c = b
+c = b;
 }
 else
 {
