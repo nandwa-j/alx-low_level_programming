@@ -8,13 +8,13 @@ void print_diagonal(int n)
 {
 int times;
 times = 0;
+for (times = n; times > 0; times--)
+{
 if (times <= 0)
 {
 _putchar('\n');
 }
-for (times = n; times > 0; times--)
-{
 _putchar('\\');
-}
 _putchar('\n');
+}
 }
