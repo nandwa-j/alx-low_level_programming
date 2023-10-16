@@ -2,11 +2,12 @@
 /**
  * _atoi - converts a string to an integer
  * @s: char array string
+ * Return: an integer
  */
-int _atoi(char *s);
+int _atoi(char *s)
 {
 int a;
-int b, c;
+int b, p;
 b = 0;
 p = -1;
 for (a = 0; s[a] != '\0'; a++)
@@ -37,4 +38,3 @@ b *= -1;
 }
 return (b);
 }
-

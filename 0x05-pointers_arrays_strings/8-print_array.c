@@ -13,7 +13,7 @@ while (count < n)
 {
 if (count != (n - 1))
 {
-prinf("%i, ", a[count]);
+printf("%i, ", a[count]);
 }
 else
 {
