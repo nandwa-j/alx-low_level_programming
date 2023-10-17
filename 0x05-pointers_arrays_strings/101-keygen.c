@@ -17,11 +17,10 @@ while (b < 2772)
 a = rand() % 128;
 if ((b + a) > 2772)
 {
-break;
+a = 2772 - b;
 }
 b = b + a;
-printf("%c\n", a);
+printf("%d\n", a);
 }
-printf("%c\n", (2772 - b));
 return (0);
 }

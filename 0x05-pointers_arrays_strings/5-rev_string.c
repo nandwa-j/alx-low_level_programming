@@ -9,12 +9,15 @@ int a, b;
 char d;
 for (a = 0; s[a] != '\0'; a++)
 {
-a = 1;
+a++;
 }
-for (a--; b = 0; a--, b++)
+b = 0;
+while (b < a)
 {
 d = s[b];
 s[b] = s[a];
 s[a] = d;
+b++;
+a--;
 }
 }
