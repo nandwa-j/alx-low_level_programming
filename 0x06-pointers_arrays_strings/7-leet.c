@@ -9,23 +9,23 @@ char *leet(char *a)
 int i;
 for (i = 0; a[i] != '\0'; i++)
 {
-while (a[i] == 'a' || a[i] == 'A')
+if (a[i] == 'a' || a[i] == 'A')
 {
 a[i] = '4';
 }
-while (a[i] == 'e' || a[i] == 'E')
+else if (a[i] == 'e' || a[i] == 'E')
 {
 a[i] = '3';
 }
-while (a[i] == 'o' || a[i] == 'O')
+else if (a[i] == 'o' || a[i] == 'O')
 {
 a[i] = '0';
 }
-while (a[i] == 't' || a[i] == 'T')
+else if (a[i] == 't' || a[i] == 'T')
 {
 a[i] = '7';
 }
-while (a[i] == 'l' || a[i] == 'L')
+else if (a[i] == 'l' || a[i] == 'L')
 {
 a[i] = '1';
 }

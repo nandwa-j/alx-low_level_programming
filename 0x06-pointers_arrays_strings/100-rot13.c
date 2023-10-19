@@ -8,15 +8,16 @@
 char *rot13(char *s)
 {
 int count = 0, b;
-while (*(s + count) != '\0')
-{
-for (b = 0; b < 52; i++)
-{
 char x[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 char aA[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-if (*(s + count) == aA[i])
+while (*(s + count) != '\0')
 {
-*(s + count) = x[i];
+for (b = 0; b < 52; b++)
+{
+
+if (*(s + count) == aA[b])
+{
+*(s + count) = x[b];
 break;
 }
 }
