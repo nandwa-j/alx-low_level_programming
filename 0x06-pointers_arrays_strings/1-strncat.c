@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * _strncat - concatenates two strings only taking n bytes from src
  * @dest: char type
@@ -25,5 +25,3 @@ n--;
 }
 return (dest)
 }
-~
-
