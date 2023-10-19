@@ -21,11 +21,11 @@ while (a[i] == 'o' || a[i] == 'O')
 {
 a[i] = '0';
 }
-while (a[t] == 'o' || a[i] == 'T')
+while (a[i] == 't' || a[i] == 'T')
 {
 a[i] = '7';
 }
-while (a[t] == 'l' || a[i] == 'L')
+while (a[i] == 'l' || a[i] == 'L')
 {
 a[i] = '1';
 }

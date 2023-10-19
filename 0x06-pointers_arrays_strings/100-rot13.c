@@ -8,16 +8,15 @@
 char *rot13(char *s)
 {
 int count = 0, b;
-char aA[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
-
 while (*(s + count) != '\0')
 {
 for (b = 0; b < 52; i++)
 {
+char x[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+char aA[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 if (*(s + count) == aA[i])
 {
-*(s + count) = rot13[i];
+*(s + count) = x[i];
 break;
 }
 }
