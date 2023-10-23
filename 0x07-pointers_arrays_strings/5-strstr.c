@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strstr - locates a substring
  * @haystack: string
@@ -24,5 +25,5 @@ return (&haystack[a]);
 a++;
 b++;
 }
-return (NULL)
+return (NULL);
 }
