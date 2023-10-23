@@ -21,7 +21,7 @@ else
 {
 return (0);
 }
-s++
+s++;
 }
 return (s + 1);
 }

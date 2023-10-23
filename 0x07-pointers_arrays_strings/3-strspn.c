@@ -27,8 +27,8 @@ b++;
 if (accept[a] == '\0')
 {
 break;
+}
 a++;
 }
 return (c);
-}
 }

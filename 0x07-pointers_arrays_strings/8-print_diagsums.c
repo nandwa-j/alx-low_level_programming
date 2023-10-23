@@ -12,7 +12,7 @@ for (b = 0; b < (size * size); b++)
 {
 if (b % (size + 1) == 0)
 {
-sum1 += *(a = b);
+sum1 += *(a + b);
 }
 if (b % (size - 1) == 0 && b != 0 && b < size * size - 1)
 {
