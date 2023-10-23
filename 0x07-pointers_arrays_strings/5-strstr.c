@@ -24,5 +24,5 @@ return (&haystack[a]);
 a++;
 b++;
 }
-return (0);
+return (NULL)
 }

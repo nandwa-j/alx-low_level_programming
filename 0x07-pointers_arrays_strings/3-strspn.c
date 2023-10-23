@@ -9,7 +9,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 int a;
 int b;
-int c;
+unsigned count = 0;
 a = 0;
 c = 0;
 while (s[a] != '\0')
@@ -19,7 +19,7 @@ while (accept[b] != '\0')
 {
 if  (s[a] == accept[b])
 {
-c++;
+count++;
 break;
 }
 b++;
@@ -30,5 +30,5 @@ break;
 }
 a++;
 }
-return (c);
+return (count);
 }
