@@ -11,7 +11,6 @@ int a;
 int b;
 unsigned count = 0;
 a = 0;
-c = 0;
 while (s[a] != '\0')
 {
 b = 0;
