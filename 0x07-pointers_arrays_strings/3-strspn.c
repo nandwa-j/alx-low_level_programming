@@ -3,13 +3,14 @@
  * _strspn - gets the length of a prefix substring
  * @s: char array
  * @accept: char array to check bytes with
- * Return: number of bytes in initial segment 
+ * Return: number of bytes in initial segment
  */
 unsigned int _strspn(char *s, char *accept)
 {
 int a;
 int b;
-unsigned count = 0;
+unsigned int count;
+count = 0;
 a = 0;
 while (s[a] != '\0')
 {
