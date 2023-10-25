@@ -5,10 +5,12 @@
  */
 void _puts_recursion(char *s)
 {
-if (*s == '\0')
+char *s1 = s;
+if (*s1 != '\0')
 {
-return;
+_putchar(*s1);
+s1++;
+_puts_recursion(s1);
 }
-_puts_recursion(s++);
-_putchar(*s);
+_putchar('\n');
 }
