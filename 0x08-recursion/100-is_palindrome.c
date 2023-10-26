@@ -1,44 +1,34 @@
 #include "main.h"
 /**
- * get_length - gets length of string
- * @str: pointer to a string
- * @len: length of a string
- * Return: return length of string
+ * check_pali - checks if a string is a palindrome
+ * @head: pointer to the start of the string
+ * @tail: pointer to the end of the string
+ * Return: 0 if it's not a palindrome, 1 if it is
  */
-int get_length(char *str, int len)
+int check_pali(char *head, char *tail)
 {
-if (*(str + len) != '\0')
+if (head >= tail)
 {
-return (get_length(str, ++len));
-}
-return (--len);
-}
-/**
- * check_pali - gets length of string
- * @a: pointer to a string
- * @b: length of a string
- * @len: length of a string
- * Return: return 0 if its not palindrome return 1 if it is
- */
-int check_pali(char *a, char *b, int len)
-{
-if (*a == *(b + len) && len > 1)
-{
-a++;
-return (check_pali(a, b, --len));
-}
-if (len == 1)
-{
-return (0);
-}
 return (1);
+}
+if (*head == *tail)
+{
+return (check_pali(head + 1, tail - 1));
+}
+return (0);
 }
 /**
  * is_palindrome - checks if a string is a palindrome
  * @s: pointer to a string
- * Return: return 0 if its not palindrome return 1 if it is
+ * Return: 0 if it's not a palindrome, 1 if it is
  */
 int is_palindrome(char *s)
 {
-return (check_pali(s, s, get_length(s, 0)));
+char *tail = s;
+while (*tail)
+{
+tail++;
+tail--;
+}
+return (check_pali(s, tail));
 }
