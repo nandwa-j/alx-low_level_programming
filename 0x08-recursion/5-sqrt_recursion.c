@@ -7,20 +7,15 @@
  */
 int help(int a, int b)
 {
-int square;
-square = b * b;
-if (square == a)
+if (b * b == a)
 {
 return (b);
 }
-else if (square < b)
-{
-return (help(b, a + 1));
-}
-else
+if (b * b > a)
 {
 return (-1);
 }
+return (help(a, b + 1));
 }
 /**
  * _sqrt_recursion - returns the natural squareroot of a number
@@ -29,6 +24,10 @@ return (-1);
  */
 int _sqrt_recursion(int n)
 {
+if (n < 0)
+{
+return (-1);
+}
 return (help(n, 1));
 }
 
