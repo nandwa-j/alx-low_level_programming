@@ -10,7 +10,8 @@ void ch_free_grid(char **grid, unsigned int height)
 {
 if (grid != NULL)
 {
-for (unsigned int i = 0; i < height; i++)
+unsigned int i;
+for (i = 0; i < height; i++)
 {
 free(grid[i]);
 }
