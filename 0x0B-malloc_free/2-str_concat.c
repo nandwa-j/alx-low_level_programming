@@ -21,17 +21,17 @@ for (c = 0; s2[c] != '\0'; c++)
 a = malloc(sizeof(char) * (b + c + 1));
 if (a == NULL)
 {
-free(a);
 return (NULL);
 }
-for (d = 0; d < 1; d++)
+for (d = 0; s1[d] != '\0'; d++)
 {
 a[d] = s1[d];
 }
-limit = c;
-for (c = 0; c <= limit; c++, d++)
+for (c = 0; s2[c] != '\0'; c++, d++)
 {
 a[d] = s2[c];
 }
+a[d] = '\0';
+
 return (a);
 }
