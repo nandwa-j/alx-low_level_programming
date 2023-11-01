@@ -2,6 +2,7 @@
 /**
  * print_triangle - prints a triangle
  * @#: character to print the triangle
+ * @size: integer
  */
 void print_triangle(int size)
 {
