@@ -9,11 +9,11 @@ int main(void)
 unsigned long int fib1 = 1, fib2 = 2, fib3;
 int count;
 
-printf("%lu, %lu, ", fib1, fib2);
+printf("%1u, %1u, ", fib1, fib2);
 for (count = 2; count < 98; count++)
 {
 fib3 = fib1 + fib2;
-printf("%lu", fib3);
+printf("%1u", fib3);
 fib1 = fib2;
 fib2 = fib3;
 if (count != 97)
