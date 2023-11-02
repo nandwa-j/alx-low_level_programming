@@ -1,30 +1,46 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-
 /**
- * _checknum - checks if the string is a valid positive number and returns its length.
+ * Check if a string consists of only digits.
+ * @str: string
+ * Return: 1 if the string is numeric. 0 otherwise'
  */
-int _checknum(char *str)
+int isNumeric(const char *str)
 {
-int l = 0;
-
-while (str[l] != '\0')
+while (*str)
 {
-if (!isdigit(str[l]))
+if (!isdigit(*str))
+{
+return (0);
+}
+str++;
+}
+return (1);
+}
+/**
+ * Multiply two positive numbers.
+ * @num1: type int
+ * @num2: type int
+ */
+void multiplyNumbers(const char *num1, const char *num2)
+{
+int len1, len2, result;
+if (!isNumeric(num1) || !isNumeric(num2))
 {
 printf("Error\n");
 exit(98);
 }
-l++;
+len1 = atoi(num1);
+len2 = atoi(num2);
+result = len1 * len2;
+printf("%d\n", result);
 }
-return (l);
-}
-
 /**
- * main - Entry point.
- * Program that multiplies two positive numbers represented as strings.
+ * main - entry point
+ * @argc: arguement
+ * @argv: argument string
+ * Return: 0 if  successful, 98 on error.
  */
 int main(int argc, char *argv[])
 {
@@ -33,54 +49,6 @@ if (argc != 3)
 printf("Error\n");
 return (98);
 }
-int len1, len2;
-len1 = _checknum(argv[1]);
-len2 = _checknum(argv[2]);
-if (len1 == 0 || len2 == 0)
-{
-printf("0\n");
-return (0);
-}
-int result, resultlen;
-resultlen = len1 + len2;
-*result = (int *)calloc(resultlen, sizeof(int));
-if (result == NULL)
-{
-printf("Error\n");
-return (98);
-}
-int i, j;
-for (i = len1 - 1; i >= 0; i--)
-{
-int carry;
-carry = 0;
-int num1 = argv[1][i] - '0';
-for (j = len2 - 1; j >= 0; j--)
-{
-int num2 = argv[2][j] - '0';
-int product = num1 * num2 + result[i + j + 1] + carry;
-result[i + j + 1] = product % 10;
-carry = product / 10;
-}
-result[i] += carry;
-}
-int startIndex = 0;
-while (startIndex < resultLen && result[startIndex] == 0)
-{
-startIndex++;
-}
-if (startIndex == resultLen)
-{
-printf("0\n");
-}
-else
-{
-for (int i = startIndex; i < resultLen; i++)
-{
-printf("%d", result[i]);
-}
-printf("\n");
-}
-free(result);
+multiplyNumbers(argv[1], argv[2]);
 return (0);
 }
