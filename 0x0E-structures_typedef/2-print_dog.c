@@ -7,24 +7,31 @@
  */
 void print_dog(struct dog *d)
 {
-if (d)
+if (d != NULL)
 {
-if (!(d->name))
-{
-printf("Name: (nil)\n");
-}
-else
+if (d->name != NULL)
 {
 printf("Name: %s\n", d->name);
 }
-printf("Age: %s\n", d->name);
-if (!(d->owner))
+else
 {
-printf("Owner: (nil)\n");
+printf("Name: (nil)\n");
+}
+if (d->age >= 0)
+{
+printf("Age: %f\n", d->age);
 }
 else
 {
+printf("Age: (nil)\n");
+}
+if (d->owner != NULL)
+{
 printf("Owner: %s\n", d->owner);
+}
+else
+{
+printf("Owner: (nil)\n");
 }
 }
 }
