@@ -15,7 +15,7 @@ exit(98);
 }
 if (get_op_func(argv[2]))
 {
-printf("%d\n", get_op_func(argv[2])atoi(argv[1]), atoi(argv[3]));
+printf("%d\n", get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3])));
 }
 else
 {

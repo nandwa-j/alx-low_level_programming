@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 int arg, i;
-unsigned int *p;
+unsigned char *p;
 if (argc != 2)
 {
 printf("Error\n");
