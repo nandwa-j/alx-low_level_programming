@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * print_all - prints anything
+ * print_strings - prints strings
  * @separator: string
  * @n: type int
  */

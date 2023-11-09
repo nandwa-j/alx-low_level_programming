@@ -4,9 +4,9 @@
  * @n: type integer
  * Return: 0 if n== 0 or sum of all parameters
  */
-int sum_the_all(const unsigned int, ...)
+int sum_them_all(const unsigned int n, ...)
 {
-va_list valist
+va_list valist;
 int sum = 0;
 unsigned int i;
 if (n == 0)
