@@ -10,11 +10,11 @@ void print_all(const char * const format, ...)
 va_list valist;
 unsigned int i = 0;
 char *str;
-int comma = 0;
+int c = 0;
 va_start(valist, format);
 while (format && format[i])
 {
-if (comma)
+if (c && (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
 printf(", ");
 switch (format[i])
 {
@@ -34,8 +34,8 @@ str = "(nil)";
 printf("%s", str);
 break;
 }
-comma = 1;
 i++;
+c = 1;
 }
 va_end(valist);
 printf("\n");
