@@ -14,7 +14,7 @@ int c = 0;
 va_start(valist, format);
 while (format && format[i])
 {
-if if (c && (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
+if (c && (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
 printf(", ");
 
 switch (format[i])
