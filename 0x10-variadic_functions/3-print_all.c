@@ -32,9 +32,6 @@ if (str == NULL)
 str = "(nil)";
 printf("%s", str);
 break;
-default:
-i++;
-continue;
 }
 i++;
 }
