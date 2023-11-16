@@ -3,10 +3,11 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * add_node - a function that adds a node at the begining pf a list_t list
+ * add_node - adds a new node at the begining of a list_t list
  * @str: string to be saved, needs to be duplicated
- * @head: first node
- * @Return: new_node
+ * @head: pointer to the head of the list
+ *
+ * Return: address of the new element nul if it fails
  */
 list_t *add_node(list_t **head, const char *str)
 {
