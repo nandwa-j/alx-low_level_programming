@@ -7,19 +7,19 @@
  */
 size_t print_list(const list_t *h)
 {
-int a;
-char *str;
-for (a = 0; h; a++, h = h->next)
+size_t count = 0;
+const char *str1;
+for (; h; count++, h = h->next)
 {
 str1 = h->str;
 if (str1)
 {
-printf("[%i] %s\n", h->len, str1);
+printf("[%lu] %s\n", h->len, str1);
 }
 else
 {
-printf("[0] %p\n", str1);
+printf("[0] (nil)\n");
 }
 }
-return (a);
+return (count);
 }
