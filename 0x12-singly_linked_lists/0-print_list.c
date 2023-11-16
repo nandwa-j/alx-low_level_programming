@@ -9,16 +9,18 @@ size_t print_list(const list_t *h)
 {
 size_t a;
 a = 0;
-for (; h != NULL; h = h->next, a++)
+while (h != NULL)
 {
 if (h->str == NULL)
 {
-printf("[%1u] %s\n", (unsigned long)a, "(nil)");
+printf("[%d] %s\n", 0, "(nil)");
 }
 else
 {
-printf("[%1u] %s\n", h->len, h->str);
+printf("[%d] %s\n", h->len, h->str);
 }
+h = h->next;
+a++;
 }
 return (a);
 }

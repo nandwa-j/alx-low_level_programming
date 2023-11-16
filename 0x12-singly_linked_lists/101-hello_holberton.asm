@@ -1,18 +1,16 @@
-          section .data
-    hello db "Hello, Holberton", 0
-    format db "%s", 10, 0
+          SECTION .data
+msg:     db "Hello, Holberton", 0
+fmt:     db "%s", 10, 0
 
-         section .text
-    global main
+         SECTION .text
+         extern printf
+         global main
 
 main:
-    ; Call printf
-    mov rdi, format
-    mov rsi, hello
-    mov rax, 0 ; printf syscall number
-    call printf
+         mov esi, msg
+         mov edi, fmt
+         mov eax, 0
+         call printf
 
-    ; Exit the program
-    mov rax, 60        ; syscall: exit
-    xor rdi, rdi       ; status: 0
-    syscall
+         mov eax, 0
+         ret
