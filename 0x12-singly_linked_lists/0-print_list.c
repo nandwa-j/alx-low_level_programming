@@ -13,11 +13,11 @@ for (; h != NULL; h = h->next, a++)
 {
 if (h->str == NULL)
 {
-printf("[%1u] %s\n", (unsigned long)a, "(nil)");
+printf("[%d] %s\n", 0, "(nil)");
 }
 else
 {
-printf("[%1u] %s\n", (unsigned long)h->len, h->str);
+printf("[%d] %s\n", h->len, h->str);
 }
 }
 return (a);

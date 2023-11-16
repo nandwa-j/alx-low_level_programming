@@ -1,7 +1,6 @@
 #ifndef _LISTS_H
 #define _LISTS_H
 
-#include <stdlib.h>
 /**
  * struct list_s - sinly linked list
  * @str: string
