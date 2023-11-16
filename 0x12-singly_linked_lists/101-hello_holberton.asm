@@ -1,8 +1,8 @@
-          SECTION .data
+          section .data
     hello db 'Hello, Holberton', 0
     format db '%s', 0
 
-         SECTION .text
+         section .text
     global main
 
 main:

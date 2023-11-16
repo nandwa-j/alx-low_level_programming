@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 /**
  * print_list - printa all elements of a list_t list
  * @h: singly linked list
@@ -12,11 +13,12 @@ for (; h != NULL; h = h->next, a++)
 {
 if (h->str == NULL)
 {
-printf("[%d] %s\n", 0 "(nil)");
+printf("[%d] %s\n", 0, "(nil)");
 }
 else
 {
 printf("[%d] %s\n", h->len, h->str);
+}
 }
 return (a);
 }

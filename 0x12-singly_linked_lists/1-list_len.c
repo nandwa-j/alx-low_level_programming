@@ -6,10 +6,10 @@
  */
 size_t list_len(const list_t *h)
 {
-int b;
-for (b = 0; h; h = h->next)
+size_t a = 0;
+for (; h; h = h->next)
 {
-;
+a++;
 }
 return (a);
 }
