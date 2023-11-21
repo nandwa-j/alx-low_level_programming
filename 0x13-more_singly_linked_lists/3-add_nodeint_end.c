@@ -13,7 +13,7 @@ if (!head)
 {
 return (NULL);
 }
-new = malloc(sizeof(lisint_t));
+new = malloc(sizeof(listint_t));
 if (!new)
 {
 return (NULL);

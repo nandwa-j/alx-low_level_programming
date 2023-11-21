@@ -1,4 +1,4 @@
-#include "lists.H"
+#include "lists.h"
 /**
  * get_nodeint_at_index - returns the nth node of a listint_t list
  * @index: index
@@ -13,6 +13,7 @@ for (a = 0; head; a++, head = (*head).next)
 if (a == index)
 {
 return (head);
+}
 }
 return (NULL);
 }

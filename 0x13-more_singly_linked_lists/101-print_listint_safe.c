@@ -6,10 +6,15 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-if (!head)
-exit(98);
-const listint_t *slow = head, *fast = head;
+const listint_t *slow, *fast;
 int flag = 0, i = 0;
+slow = head;
+fast = head;
+if (!head)
+{
+exit(98);
+}
+
 while (fast && fast->next && !flag)
 {
 slow = slow->next;
