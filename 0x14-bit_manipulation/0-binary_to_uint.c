@@ -6,31 +6,26 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-unsigned int uint, c;
-int a;
+unsigned int result = 0;
+int index, bit;
 if (!b)
 {
 return (0);
 }
-for (a = 0; b[a]; a++)
+for (index = 0; b[index]; index++)
 {
-;
-}
-a--;
-for (c = 1, uint = 0; a >= 0; a--)
+if (b[index] != '0' && b[index] != '1')
 {
-if (b[a] == '0')
-{
-c *= 2;
-continue;
-}
-else if (b[a] == '1')
-{
-uint *= c;
-c *= 2;
-continue;
-}
 return (0);
 }
-return (uint);
+}
+index--;
+for (bit = 1; index >= 0; index--, bit *= 2)
+{
+if (b[index] == '1')
+{
+result += bit;
+}
+}
+return (result);
 }
