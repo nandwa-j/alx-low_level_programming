@@ -6,17 +6,19 @@
  */
 int main(void)
 {
-char abc;
+        char c;
 
-for (abc = 'a'; abc <= 'z'; abc++)
-{
-if (abc == 'q' || abc == 'e')
-{
-continue;
-}
-putchar(abc);
-}
-putchar('\n');
-return (0);
-}
+        c = 'a';
 
+        while(c <= 'z')
+        {
+                if (c != 'e' && c != 'q')
+                {
+                        putchar(c);
+                }
+                c++;
+        }
+
+        putchar('\n');
+        return (0);
+}

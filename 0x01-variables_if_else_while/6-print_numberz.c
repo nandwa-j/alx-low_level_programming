@@ -5,13 +5,17 @@
  * Return: Always 0 (success)
  */
 int main(void)
+int main(void)
 {
-int numbz;
+        int c;
+        c = 0;
 
-for (numbz = '0'; numbz <= '9'; numbz++)
-{
-putchar(numbz);
+        while (c < 10)
+        {
+                putchar(48 + c);
+                c++;
+        }
+        putchar('\n');
+        return (0);
 }
-putchar('\n');
-return (0);
-}
+

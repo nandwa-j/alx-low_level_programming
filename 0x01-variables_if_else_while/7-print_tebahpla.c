@@ -7,13 +7,14 @@
 
 int main(void)
 {
-char rev[26] = "zyxwvutsrqponmlkjihgfedcba";
-int a;
+        char c = 'z';
 
-for (a = 0; a < 26; a++)
-{
-putchar(rev[a]);
+        while (c >= 'a')
+        {
+                putchar(c);
+                c--;
+        }
+        putchar('\n');
+        return (0);
 }
-putchar('\n');
-return (0);
-}
+

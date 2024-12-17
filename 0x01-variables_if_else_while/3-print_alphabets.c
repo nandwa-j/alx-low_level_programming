@@ -6,13 +6,24 @@
  */
 int main(void)
 {
-char letters[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-int a;
-for (a = 0; a < 52; a++)
-{
-putchar(letters[a]);
-}
-putchar('\n');
-return (0);
-}
+        char c;
+        char d;
 
+        c = 'a';
+        d = 'A';
+
+        while (c <= 'z')
+        {
+                putchar(c);
+                c++;
+        }
+        while (d <= 'Z')
+        {
+                putchar(d);
+                d++;
+        }
+
+        putchar('\n');
+        return (0);
+}
+~

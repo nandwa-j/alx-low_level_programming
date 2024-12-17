@@ -6,14 +6,15 @@
  */
 int main(void)
 {
-char letters[26] = "abcdefghijklmnopqrstuvwxyz";
-int a;
+        char c;
 
-for (a = 0; a < 26; a++)
-{
-putchar(letters[a]);
-}
-putchar('\n');
-return (0);
-}
+        c = 'a';
+        while (c <= 'z')
+        {
+                putchar(c);
+                c++;
 
+        }
+        putchar('\n');
+        return (0);
+}

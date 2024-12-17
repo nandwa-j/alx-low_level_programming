@@ -6,21 +6,24 @@
  */
 int main(void)
 {
-int numbers;
+        int num;
 
-for (numbers = '0'; numbers <= '9'; numbers++)
-{
-putchar(numbers);
-if (numbers == '9')
-{
-continue;
+         num = 0;
+
+         while (num < 10)
+         {
+                 if (num == 9)
+                 {
+                         putchar(48 + num);
+                 }
+                 else
+                 {
+                        putchar(48 + num);
+                        putchar(',');
+                        putchar(' ');
+                 }
+                 num++;
+         }
+        return (0);
 }
-else
-{
-putchar(',');
-putchar(' ');
-}
-}
-putchar('\n');
-return (0);
-}
+

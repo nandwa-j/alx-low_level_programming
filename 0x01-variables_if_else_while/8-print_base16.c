@@ -6,17 +6,24 @@
  */
 int main(void)
 {
-int numbers;
-int numbers1;
+        int num;
+        char dec;
 
-for (numbers = '0'; numbers <= '9'; numbers++)
-{
-putchar(numbers);
+        num = 0;
+        dec = 'a';
+
+
+        while (num < 10)
+        {
+                putchar(48 + num);
+                num++;
+        }
+        while (dec <= 'f')
+        {
+                putchar(dec);
+                dec++;
+        }
+        putchar('\n');
+        return (0);
 }
-for (numbers1 = 'a'; numbers1 <= 'f'; numbers1++)
-{
-putchar(numbers1);
-}
-putchar('\n');
-return (0);
-}
+
