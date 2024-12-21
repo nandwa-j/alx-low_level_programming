@@ -5,11 +5,18 @@
  */
 void reverse_array(int *a, int n)
 {
-int b, d;
-for (b = 0; b < (n / 2); b++)
-{
-d = a[b];
-a[b] = a[n - b - 1];
-a[n - b - 1] = d;
-}
+     int r, l, t;
+     l = 0;
+     r = n -1;
+
+      while (l < n / 2)
+      {
+        t = a[l];
+        a[l] = a[r];
+        a[r] = t;
+
+        l++;
+        r--;
+      }
+
 }
